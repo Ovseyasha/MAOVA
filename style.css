@@ -7,7 +7,7 @@ html,body {
   overflow-x: hidden;
 }
 a {text-decoration: none;color: black;}
-h1 {margin: 0;padding: 0;}
+h1 {font-size: 14px;margin: 0;padding: 0;}
 li {list-style-type: none;}
 /* главный блок */
 main {
@@ -18,27 +18,62 @@ main {
   /* transition: .5s ease-in-out; */
 }
 /* меню */
+.logo {
+  cursor: pointer;
+  z-index: 2;
+  position: fixed;
+  margin: 1%;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
 nav {
   z-index: 1;
   position: fixed;
   width: 100%;
   margin-top: 2%;
-  
 }
-nav ul {
- display: flex;
- justify-content: flex-end;	
+nav .contText ul {
+  display: flex;
  margin:0;
  padding:0;
+ width: 30%;
+ margin-right: 4%;
 }
-nav ul li  {
-  white-space: nowrap;
+
+nav
+/* меню текст */
+.contText {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.contText ul {
   margin-right: 4%;
-  padding:0;
+  width: 30%;
 }
-nav a h1 {font-size: 14px;}
-.border {
-  border-bottom: 2px solid black;
+nav .contText ul li  {
+  white-space: nowrap;
+  padding:0;
+  cursor: pointer;
+  width: 25%;
+  text-align: center;
+}
+/* полоса прокрутки */
+.cont {
+  height: 2px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.cont .cont2 {
+  margin-right: 4%;
+  width: 30%;
+}
+.cont2 .slider {
+  width: 0;
+  height: 2px;
+  background-color: black;
 }
 /* страницы */
 section {

@@ -26,35 +26,88 @@ window.addEventListener("wheel", function(e) {
     setTimeout(function () { wheel = true; }, 710);
   }
   // очень глупая затея готорую надо пофиксить
-  if (main.style.left ==  '0%' || '0px') {
-    document.getElementById('navServices').classList.remove('border');
-    document.getElementById('navPortfolio').classList.remove('border');
-    document.getElementById('navContacts').classList.remove('border');
-    document.getElementById('navAbout').classList.remove('border');
+  document.getElementById('slider').style.transition = "all .9s ease-in-out";
+
+  if (main.style.left ==   '0' || '0%' || '0px' ) {
+    document.getElementById('slider').style.width = '0';
   }
   if (main.style.left ==  '-100%') {
-    document.getElementById('navServices').classList.remove('border');
-    document.getElementById('navPortfolio').classList.remove('border');
-    document.getElementById('navContacts').classList.remove('border');
-    document.getElementById('navAbout').classList.add('border');
+    document.getElementById('slider').style.width = '25%';
+    document.getElementById('slider').style.marginLeft = '0%';
   }
-
   if (main.style.left ==  '-200%') {
-    document.getElementById('navAbout').classList.remove('border');
-    document.getElementById('navPortfolio').classList.remove('border');
-    document.getElementById('navContacts').classList.remove('border');
-    document.getElementById('navServices').classList.add('border');
+    document.getElementById('slider').style.width = '25%';
+    document.getElementById('slider').style.marginLeft = '25%';
   }
   if (main.style.left ==  '-300%') {
-    document.getElementById('navAbout').classList.remove('border');
-    document.getElementById('navServices').classList.remove('border');
-    document.getElementById('navContacts').classList.remove('border');
-    document.getElementById('navPortfolio').classList.add('border');
+    document.getElementById('slider').style.width = '25%';
+    document.getElementById('slider').style.marginLeft = '50%';
   }
   if (main.style.left ==  '-400%') {
-    document.getElementById('navAbout').classList.remove('border');
-    document.getElementById('navServices').classList.remove('border');
-    document.getElementById('navPortfolio').classList.remove('border');
-    document.getElementById('navContacts').classList.add('border');
+    document.getElementById('slider').style.width = '25%';
+    document.getElementById('slider').style.marginLeft = '75%';
   }
+
+});
+
+//Ссылки
+//ссылка на главную
+document.getElementById('logo').addEventListener("click", function (){
+  var main = document.getElementById('main');
+  if (main.style.left == '0xp' || '0%') {
+    document.getElementById('slider').style.marginLeft = '0%';
+    document.getElementById('slider').style.width = '0';
+
+    main.style.transition = "all .5s ease-in-out";
+    main.style.left = '0%';
+  }
+
+});
+
+document.getElementById('navAbout').addEventListener("click", function (){
+  var main = document.getElementById('main');
+  if (main.style.left == '0xp' || '0%') {
+    document.getElementById('slider').style.width = '25%';
+    document.getElementById('slider').style.marginLeft = '0%';
+
+    main.style.transition = "all .5s ease-in-out";
+    main.style.left = '-100%';
+  }
+
+});
+
+document.getElementById('navServices').addEventListener("click", function (){
+  var main = document.getElementById('main');
+  if (main.style.left == '0xp' || '0%') {
+    document.getElementById('slider').style.width = '25%';
+    document.getElementById('slider').style.marginLeft = '25%';
+
+    main.style.transition = "all .5s ease-in-out";
+    main.style.left = '-200%';
+  }
+
+});
+
+document.getElementById('navPortfolio').addEventListener("click", function (){
+  var main = document.getElementById('main');
+  if (main.style.left == '0xp' || '0%') {
+    document.getElementById('slider').style.width = '25%';
+    document.getElementById('slider').style.marginLeft = '50%';
+
+    main.style.transition = "all .5s ease-in-out";
+    main.style.left = '-300%';
+  }
+
+});
+
+document.getElementById('navContacts').addEventListener("click", function (){
+  var main = document.getElementById('main');
+  if (main.style.left == '0xp' || '0%') {
+    document.getElementById('slider').style.width = '25%';
+    document.getElementById('slider').style.marginLeft = '75%';
+
+    main.style.transition = "all .5s ease-in-out";
+    main.style.left = '-400%';
+  }
+
 });
