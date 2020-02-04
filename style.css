@@ -18,7 +18,7 @@ main {
 }
 /* меню */
 nav {
-  right: 0;
+  right: 17%;
   top: -1%;
   z-index: 1;
   display: flex;
