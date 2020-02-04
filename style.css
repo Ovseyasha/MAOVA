@@ -7,6 +7,7 @@ html,body {
   overflow-x: hidden;
 }
 a {text-decoration: none;color: black;}
+h1 {margin: 0;padding: 0;}
 li {list-style-type: none;}
 /* главный блок */
 main {
@@ -18,21 +19,22 @@ main {
 }
 /* меню */
 nav {
-  right: 17%;
-  top: -1%;
   z-index: 1;
-  display: flex;
   position: fixed;
-  text-align: center;
-  align-items: center;
-  align-self: center;
+  width: 100%;
+  margin-top: 2%;
+  
 }
 nav ul {
-  display: flex;
+ display: flex;
+ justify-content: flex-end;	
+ margin:0;
+ padding:0;
 }
 nav ul li  {
   white-space: nowrap;
-  margin-right: 20%;
+  margin-right: 4%;
+  padding:0;
 }
 nav a h1 {font-size: 14px;}
 .border {
