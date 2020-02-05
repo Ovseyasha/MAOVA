@@ -1,8 +1,4 @@
-// $(function() {
-//     $("body").niceScroll();
-// });
-// var nice = $("#about").getNiceScroll();
-// jQuery.scrollSpeed(1000, 200, 'easeOutCubic');
+document.getElementById('slider').style.transition = "all .9s ease-in-out";
 var wheel = true;
 window.addEventListener("wheel", function(e) {
   var main = document.getElementById('main');
@@ -26,8 +22,6 @@ window.addEventListener("wheel", function(e) {
     setTimeout(function () { wheel = true; }, 710);
   }
   // очень глупая затея готорую надо пофиксить
-  document.getElementById('slider').style.transition = "all .9s ease-in-out";
-
   if (main.style.left ==   '0' || '0%' || '0px' ) {
     document.getElementById('slider').style.width = '0';
   }
