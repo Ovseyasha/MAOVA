@@ -50,7 +50,7 @@ nav
 }
 .contText ul {
   margin-right: 4%;
-  width: 30%;
+  min-width: 576px;
 }
 nav .contText ul li  {
   white-space: nowrap;
@@ -68,7 +68,7 @@ nav .contText ul li  {
 }
 .cont .cont2 {
   margin-right: 4%;
-  width: 30%;
+  min-width: 576px;
 }
 .cont2 .slider {
   width: 0;
