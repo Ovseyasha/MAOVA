@@ -143,7 +143,7 @@ section {
 		margin-right: 1.5%;
 	} 
 }
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
 	.flexContainer  {
 		justify-content: center;
 	}
@@ -154,7 +154,7 @@ section {
 	.flexContainer  .block:nth-child(odd) {
 		margin-right: 1.5%;
 	} 
-}
+} */
 @media (max-width: 658px) {
 	.flexContainer  {
 		justify-content: center;
